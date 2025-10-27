@@ -1,0 +1,24 @@
+:host { display:block; height:100vh; }
+.container { height: 100vh; }
+.sidenav  { width: 260px; }
+.content  { padding: 16px; }
+.toolbar  { position: sticky; top: 0; z-index: 2; }
+.app-title{ margin-left: 8px; font-weight: 600; }
+
+/* Ejemplo de colores para la topbar y fondo */
+.topbar { background:#7e2130; color:#e2e8f0; }
+.content { background:#f8fafc; }
+mat-toolbar {
+  --mat-toolbar-container-background-color: hsl(347, 64%, 35%);
+  --mat-toolbar-container-text-color: #e2e8f0;
+}
+
+.topbar {
+  background: #7e2130;      
+  color: #fff;             
+}
+
+.topbar button[mat-icon-button],
+.topbar button[mat-icon-button] mat-icon {
+  color: #fff !important;
+}
