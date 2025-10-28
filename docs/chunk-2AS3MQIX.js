@@ -1,0 +1,1 @@
+import{$b as m,Xa as n}from"./chunk-CO6DQWL3.js";var e=class o{title="Bienvenido a mi aplicaci\xF3n Angular";static \u0275fac=function(t){return new(t||o)};static \u0275cmp=n({type:o,selectors:[["app-home"]],decls:0,vars:0,template:function(t,i){},dependencies:[m],encapsulation:2})};var l=[{path:"",component:e}];export{l as HOME_ROUTES};
