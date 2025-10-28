@@ -26,22 +26,25 @@ import { isPlatformBrowser } from '@angular/common';
     template: `
 
      <mat-toolbar color="primary" class="topbar">
-      <span class="brand">Borrell & Piñol</span>
       <img src="/assets/img/BPOrigin.png" alt="Borrell & Piñol" class="logo">
-      <span class="spacer"></span>
 
       <!-- Navegación horizontal (desktop) -->
       <nav class="nav-desktop">
-        <a mat-button routerLink="/" routerLinkActive="mat-mdc-button-focus-overlay" [routerLinkActiveOptions]="{exact:true}">Inicio</a>
+        <a mat-button routerLink="/home" routerLinkActive="mat-mdc-button-focus-overlay" [routerLinkActiveOptions]="{exact:true}">Inicio</a>
         <a mat-button routerLink="/products" routerLinkActive="mat-mdc-button-focus-overlay">Productos</a>
-        <a mat-button routerLink="/admin" routerLinkActive="mat-mdc-button-focus-overlay">Admin</a>
+        <a mat-button routerLink="/" routerLinkActive="mat-mdc-button-focus-overlay" [routerLinkActiveOptions]="{exact:true}">Número de compañia</a>
+        <a mat-button routerLink="/" routerLinkActive="mat-mdc-button-focus-overlay" [routerLinkActiveOptions]="{exact:true}">FAQ’S</a>
+        <a mat-button routerLink="/" routerLinkActive="mat-mdc-button-focus-overlay" [routerLinkActiveOptions]="{exact:true}">Equipo</a>
+        <a mat-button routerLink="/" routerLinkActive="mat-mdc-button-focus-overlay" [routerLinkActiveOptions]="{exact:true}">Sobre nosotros</a>
+        <!--<a mat-button routerLink="/admin" routerLinkActive="mat-mdc-button-focus-overlay">Admin</a>-->
       </nav>
 
+      <span class="spacer"></span>
        <!-- Menú hamburguesa (móvil) -->
       <div class="nav-mobile">
         <button mat-icon-button [matMenuTriggerFor]="menu"  aria-label="Abrir menú" class="menu-button"><mat-icon>menu</mat-icon></button>
         <mat-menu #menu="matMenu" xPosition="before" yPosition="below" >
-          <button mat-menu-item routerLink="/inicio">Inicio</button>
+          <button mat-menu-item routerLink="/inicio">Iniciar Sesión / Registrarse</button>
           <button mat-menu-item routerLink="/products">Quienes Somos</button>
           <button mat-menu-item routerLink="/admin">Empresas</button>
         </mat-menu>
